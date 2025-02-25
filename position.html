@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POSITIONS</title>
+
+    <style>
+    .container{
+        height:200px;
+        width: 200px;
+        background-color: red;
+        position: relative;
+
+    }
+
+    .box{
+        width: 50px;
+        height: 50px;
+        background-color: green;
+    }
+
+    img{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 25px;
+    }
+
+
+    .dropdown{
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropbtn{
+        color: orange;
+        background-color: green;
+        font-size: 16px;
+        padding: 8px 12px;
+        border: none;
+        cursor: pointer;
+    }
+
+    .dropdown-content{
+        display: none;
+        background-color: grey;
+        position: absolute;
+        box-shadow: 0px 8px 12px 0px rgba(0, 0, 0, 0.2);
+
+    }
+
+    .dropdown-content a{
+        display: block;
+        padding: 8px 12px;
+        text-decoration: none;
+        color: white;
+        background-color: aqua;
+        border-bottom: 1px white solid;
+    }
+
+
+    .dropdown:hover .dropdown-content{
+        display: block;
+    }
+     .dropdown-content a:hover{
+        background-color: blue;
+        color: tomato;
+    }
+</style>
+</head>
+<body>
+    <h1>TYPES OF POSITION</h1>
+
+    <pre>
+        relative
+        absolute
+        static
+        sticky
+
+    </pre>
+
+    <div class="container">
+        <div class="box">
+            <img src="whatsapp.png" >
+        </div>
+    </div>
+
+    <br> <br>
+
+    <div class="dropdown">
+        <button class="dropbtn">Home Button</button>
+        <div class="dropdown-content">
+            <a href="#">Image Gallery</a>
+            <a href="#">FAQ</a>
+            <a href="#">Services</a>
+        </div>
+    </div>
+</body>
+</html>
